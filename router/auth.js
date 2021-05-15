@@ -5,10 +5,6 @@ const Transaction = require("../model/transactions");
 const getCustomersList = require("../middleware/getCustomersList");
 const getTransactionsHistory = require("../middleware/getTransactionsHistory");
 
-router.get("/", (req, res) => {
-  res.send(`Hello world from Server router`);
-});
-
 // Adding users to the database
 router.post("/createUser", async (req, res) => {
   const { name, email, balance } = req.body;
