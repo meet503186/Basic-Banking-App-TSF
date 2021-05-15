@@ -114,17 +114,18 @@
 
 .customers,
 .transaction {
-  width: 70%;
+  width: 80rem;
   height: 4rem;
   margin: auto;
   padding: 9px 0;
   display: grid;
   grid-template-columns: 10rem 20rem 25rem 10rem 16rem;
+  align-items: center;
   border-radius: 10px;
 }
 
 .transaction {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 10rem repeat(2, 1fr) 15rem;
 }
 
 .customers:nth-child(even),
@@ -168,6 +169,10 @@
 .outlined-btn:hover {
   background-color: #3458db;
   color: white;
+}
+
+.details-btn {
+  height: 3rem;
 }
 
 /* Transfer Money */
@@ -224,7 +229,6 @@
 }
 
 .btn-transfer-money:hover {
-  /* background-color: #183cbe; */
   background-color: #3498db;
   color: white;
 }
