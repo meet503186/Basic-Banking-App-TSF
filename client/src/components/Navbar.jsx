@@ -33,7 +33,6 @@ const Navbar = () => {
                         activeClassName="menu_active"
                         exact
                         className="nav-link actice"
-                        aria-current="page"
                         to="/"
                       >
                         Home
