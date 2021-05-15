@@ -37,11 +37,7 @@ const AllCustomers = (props) => {
 
   return (
     <>
-      <h1
-        style={{ marginTop: "3rem", textAlign: "center", fontSize: "3.5rem" }}
-      >
-        All Customers
-      </h1>
+      <h1 className="heading">All Customers</h1>
       <div className="customers-container">
         <div className="customers">
           <h2> S. No. </h2>

@@ -59,11 +59,13 @@ const TransferMoney = () => {
 
     const data = await res.json();
     console.log(res.status);
-    if (res.status === 422 || !data) {
+    if (res.status === 422) {
       window.alert("Insufficient Amount");
-    } else {
+    } else if (res.status === 201) {
       window.alert("Transaction Successfull");
       history.push("/transactionshistory");
+    } else {
+      window.alert("All fields are required");
     }
   };
 

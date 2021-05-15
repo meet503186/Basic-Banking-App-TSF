@@ -35,11 +35,7 @@ const TransactionsHistory = () => {
 
   return (
     <>
-      <h1
-        style={{ marginTop: "3rem", textAlign: "center", fontSize: "3.5rem" }}
-      >
-        Transaction History
-      </h1>
+      <h1 className="heading">Transaction History</h1>
       <div className="transactions-container">
         <div className="transaction">
           <h2> S. No. </h2>

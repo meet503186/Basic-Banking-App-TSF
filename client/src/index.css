@@ -7,9 +7,24 @@
   font-family: "Muli", sans-serif;
 }
 
+.heading {
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
 /* Responsive Animated Website */
 
 /* Navbar */
+
+.row {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
 .navbar {
   background-color: white !important;
 }
@@ -104,7 +119,7 @@
   margin: auto;
   padding: 9px 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 10rem 20rem 25rem 10rem 16rem;
   border-radius: 10px;
 }
 
@@ -205,6 +220,7 @@
   text-decoration: none;
   transition: 0.5s;
   padding: 8px 0;
+  outline: none;
 }
 
 .btn-transfer-money:hover {
