@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+/* Responsive Animated Website */
+
+/* Navbar */
+.navbar {
+  background-color: white !important;
+}
+
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387 !important;
+}
+
+/* Header */
+
+#header {
+  width: 100vw;
+  height: 89vh;
+}
+
+#header h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: black;
+}
+
+#header .brand-name {
+  display: block;
+  color: #3498db !important;
+}
+
+#header h2 {
+  color: #484848;
+  font-size: 1.5rem;
+  margin-bottom: 1rem !important;
+}
+
+.btn-get-started {
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 3rem;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+.btn-get-started:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+#header .header-img {
+  width: 45rem;
+  float: right;
+}
+
+.card-img-top {
+  height: 30rem;
+  width: 30rem;
+}
+
+/* --------------------------- */
+
+/* All Customers And Transactions History*/
+
+.customers-container,
+.transactions-container {
+  width: 100%;
+  height: auto;
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.customers,
+.transaction {
+  width: 70%;
+  height: 4rem;
+  margin: auto;
+  padding: 9px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-radius: 10px;
+}
+
+.transaction {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.customers:nth-child(even),
+.transaction:nth-child(even) {
+  background-color: #edf4fb;
+}
+
+.customers:nth-child(1) h2,
+.transaction:nth-child(1) h2 {
+  font-weight: bold;
+}
+
+.customers h2,
+.transaction h2 {
+  font-size: 1.5rem;
+}
+
+.btns {
+  width: 20%;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.outlined-btn {
+  background-color: transparent;
+  color: #3458db;
+  width: 8rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #3458db;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.outlined-btn:hover {
+  background-color: #3458db;
+  color: white;
+}
+
+/* Transfer Money */
+
+.main-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transfer-money-form {
+  width: 30%;
+  height: auto;
+  margin: auto;
+  padding: 52px;
+  background: #edf4fb;
+}
+
+.transfer-money-form h1 {
+  text-align: center;
+}
+
+.input-group-text {
+  background-color: #3458db !important;
+  color: white !important;
+}
+
+.form-select,
+.form-control {
+  border-left: none;
+  cursor: pointer;
+  outline: #fff !important;
+}
+
+.input-amount {
+  cursor: text;
+}
+
+.btn-transfer-money {
+  background-color: #3458db;
+  color: white;
+  width: 8rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #3458db;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 8px 0;
+}
+
+.btn-transfer-money:hover {
+  /* background-color: #183cbe; */
+  background-color: #3498db;
+  color: white;
+}
+#disabled {
+  background: white;
+}
+#disabled select::-ms-expand {
+  display: none;
+}
+
+#disabled:disabled {
+  opacity: 1;
+  color: black;
+}
+/* For Hiding Increment Decrement Arrows */
+
+/* Chrome, Safari, Edge, Opera */
+.input-amount::-webkit-outer-spin-button,
+.input-amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input-amount {
+  -moz-appearance: textfield;
+}
+
+/* Customer's Detail page */
+
+.detail-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail {
+  width: 50rem;
+  height: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-img {
+  background: #edf4fb;
+  width: 35%;
+  height: 100%;
+  padding: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-user {
+  color: #3458db;
+  font-size: 15rem;
+}
+
+.text {
+  width: 65%;
+  height: 100%;
+  padding: 45px;
+}
+
+.text span {
+  border: none;
+  background-color: #3458db !important;
+}
+
+.text select {
+  font-size: 1.3rem;
+  background: #edf4fb;
+  border: 2px solid #3458db;
+  border-left: none;
+  padding-left: 15px;
+  margin: 0;
+  cursor: text;
+}
+.text select::-ms-expand {
+  display: none;
+}
+.text select:disabled {
+  opacity: 1;
+  color: black;
+}
+
+.text .common {
+  width: 11rem;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .menu_active {
+    font-weight: bold !important;
+    border-bottom: none !important;
+  }
+
+  .mb-lg-5 {
+    margin-bottom: 10rem !important;
+  }
+}
