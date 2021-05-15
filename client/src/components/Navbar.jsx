@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       <div className="container-fluid nav_bg">
-        <div className="row">
+        <div className="row sticky-navbar">
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container-fluid">
