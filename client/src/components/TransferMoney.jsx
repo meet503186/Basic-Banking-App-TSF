@@ -61,6 +61,8 @@ const TransferMoney = () => {
 
     if (res.status === 422 && data.error === "Insufficient Amount") {
       window.alert("Insufficient Amount");
+    }else if (res.status === 422 && data.error === "Amount Cannot Be Negative") {
+      window.alert("Amount can't be negative");
     } else if (res.status === 201) {
       window.alert("Transaction Successfull");
       history.push("/transactionshistory");

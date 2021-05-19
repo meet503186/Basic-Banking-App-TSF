@@ -52,6 +52,10 @@ router.post("/transfermoney", async (req, res) => {
     if (sender.balance < amount) {
       return res.status(422).json({ error: "Insufficient Amount" });
     }
+
+    if (amount < 0) {
+      return res.status(422).json({error: "Amount Cannot Be Negative"});
+    }
     sender.balance = parseInt(sender.balance) - parseInt(amount);
     receiver.balance = parseInt(receiver.balance) + parseInt(amount);
 
